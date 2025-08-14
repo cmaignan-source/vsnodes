@@ -72,7 +72,7 @@ Supports **basic arithmetic**, **trigonometric functions**, and **mathematical c
 **Examples:**
 - "5+5" → AsInteger=10, AsDouble=10.0, AsList=[10]
 - "sqrt(9)" → AsInteger=3, AsDouble=3.0, AsList=[3]
-- "cos(pi)" → AsInteger=-1.0, AsDouble=1.0, AsList=[-1]
+- "cos(pi)" → AsInteger=-1, AsDouble=-1.0, AsList=[-1]
 - "cos(rad(60))" → AsDouble=0.5, AsList=[0.5]
 - "deg(acos(0.5))" → AsDouble=60.0, AsList=[60.0]
 
