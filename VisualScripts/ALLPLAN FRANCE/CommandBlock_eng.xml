@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?><Element>
     <StringTable text="Allplan CommandBlock NodeScripts stringtable"></StringTable>
-    <Node Name="NodeExecPythonScript">
+    <Node Name="NodeCommandBlock">
         <Item>
             <TextId>1001</TextId>
             <Text>Execute instruction within the visual workflow</Text>
