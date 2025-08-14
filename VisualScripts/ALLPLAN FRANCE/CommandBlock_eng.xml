@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?><Element>
+    <StringTable text="Allplan CommandBlock NodeScripts stringtable"></StringTable>
+    <Node Name="NodeExecPythonScript">
+        <Item>
+            <TextId>1001</TextId>
+            <Text>Execute instruction within the visual workflow</Text>
+            <Description/>
+            <Note/>
+            <Bitmap></Bitmap>
+        </Item>
+        <Item>
+            <TextId>1002</TextId>
+            <Text>Execute instruction</Text>
+            <Description/>
+            <Note/>
+            <Bitmap></Bitmap>
+        </Item>
+        <Item>
+            <TextId>1003</TextId>
+            <Text>Command</Text>
+            <Description/>
+            <Note/>
+            <Bitmap></Bitmap>
+        </Item>
+        <Item>
+            <TextId>1004</TextId>
+            <Text>Result</Text>
+            <Description/>
+            <Note/>
+            <Bitmap></Bitmap>
+        </Item>
+    </Node>
+</Element>
