@@ -86,7 +86,7 @@ Using the **`|`** separator, you can manually create a list with detection of el
 - Mixed / text → list of `str`
 
 **Examples:**
-"toto|tata|titi" → AsList=["toto", "tata", "titi"]
+- "toto|tata|titi" → AsList=["toto", "tata", "titi"]
 
 ---
 
