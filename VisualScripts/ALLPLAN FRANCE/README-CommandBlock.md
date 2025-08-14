@@ -104,10 +104,10 @@ Using `..` notation, the script supports several formats:
 - Supports ascending and descending sequences
 
 **Examples:**
-"1..5" → AsList=[1,2,3,4,5]
-"10..0..2" → AsList=[10,8,6,4,2,0]
-"A..E" → AsList=["A", "B", "C", "D", "E"]
-"A..Z..@6" → AsList=["A", "F", "K", "P", "U", "Z"]
+- "1..5" → AsList=[1,2,3,4,5]
+- "10..0..2" → AsList=[10,8,6,4,2,0]
+- "A..E" → AsList=["A", "B", "C", "D", "E"]
+- "A..Z..@6" → AsList=["A", "F", "K", "P", "U", "Z"]
 
 ---
 
