@@ -18,7 +18,7 @@ This repository offers a collection of custom VisualScripting nodes designed to 
 ## Installation
 
 1. **Download** the custom nodes into the VisualScripting directory with the ALLPLAN Content connector.
-2. The new nodes will appear in the Custome Library.
+2. The new nodes will appear in the Custom Library.
 
 ## Usage
 
