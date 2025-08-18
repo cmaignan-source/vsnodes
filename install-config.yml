@@ -1,7 +1,7 @@
 plugin:
   name: Custom VS Nodes From Allplan France
   UUID: 5f3c2d8a-29d1-4a54-8d9e-7e4b3c2a1f6b
-  version: 0.1.0
+  version: 0.2.0
   developer: allplan-france
   default-language: en
   min-allplan-version: 2026
