@@ -13,8 +13,9 @@ This repository offers a collection of custom VisualScripting nodes designed to 
 
 ## Installation
 
-**Custom VS Nodes From Allplan France** can be installed directly from the Plugin Manager in ALLPLAN.
-Alternatively, the corresponding .allep package can be downloaded from the [release page](https://github.com/cmaignan-source/vsnodes/releases). *.allep* files are ALLPLAN extension packages that can be installed via drag and drop into the program window.
+**Custom VS Nodes From Allplan France** can be installed directly from the Plugin Manager in ALLPLAN.  
+Alternatively, the corresponding .allep package can be downloaded from the [release page](https://github.com/cmaignan-source/vsnodes/releases).  
+*.allep* files are ALLPLAN extension packages that can be installed via drag and drop into the program window.
 
 ## Requirements
 
