@@ -1,33 +1,33 @@
 name: Create release draft
 
 on:
-push:
+  push:
     tags:
-    - "*" 
+      - "*"
 
 jobs:
-build:
-    runs-on: windows-latest 
+  build:
+    runs-on: windows-latest
     permissions:
-    contents: write
+      contents: write
     steps:
-    - name: Checkout repository
+      - name: Checkout repository
         uses: actions/checkout@v3
 
-    - name: Create allep file 
+      - name: Create allep file
         uses: vimtor/action-zip@v1.1
         with:
-        files: VisualScripts/ install-config.yml
-        recursive: false
-        dest: vsnodes_allplanfrance.allep
+          files: VisualScripts/ install-config.yml
+          recursive: false
+          dest: vsnodes_allplanfrance.allep
 
-    - name: Create release draft 
+      - name: Create release
         env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-        $tag = "${{ github.ref_name }}"
+          $tag = "${{ github.ref_name }}"
 
-        gh release create "$tag" `
+          gh release create "$tag" `
             --title="$tag" `
             --draft `
             vsnodes_allplanfrance.allep
