@@ -193,13 +193,13 @@ class NodeCommandBlock(NodeBase):
 
         # Integer
         try:
-            return [int(v) for v in seq]
+            return sorted([int(v) for v in seq])
         except ValueError:
             pass
 
         # Float
         try:
-            return [float(v) for v in seq]
+            return sorted([float(v) for v in seq])
         except ValueError:
             pass
 

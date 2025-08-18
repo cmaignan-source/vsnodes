@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?><Element>
-    <StringTable text="Allplan CommandBlock NodeScripts stringtable"></StringTable>
+    <StringTable text="Allplan CommandBlock NodeScript stringtable"></StringTable>
     <Node Name="NodeCommandBlock">
         <Item>
             <TextId>1001</TextId>
@@ -17,7 +17,13 @@
         </Item>
         <Item>
             <TextId>1003</TextId>
-            <Text>Command</Text>
+            <Text>Command&#xA;
+single–line string containing an instruction for :&#xA;
+1) single value handling (integer, decimal or text)&#xA;
+2) mathematical operations (+, -, *, /, pi, cos, ...)&#xA;
+3) manual list creation ("toto|tata|titi")&#xA;
+4) complex sequence generation (start..end, start..end..step, start..end..@count, start..@count..end)&#xA;
+5) random value generation (rand(min, max, count) or randf(min, max, count[, precision]))</Text>
             <Description/>
             <Note/>
             <Bitmap></Bitmap>
@@ -25,6 +31,34 @@
         <Item>
             <TextId>1004</TextId>
             <Text>Result</Text>
+            <Description/>
+            <Note/>
+            <Bitmap></Bitmap>
+        </Item>
+        <Item>
+            <TextId>1005</TextId>
+            <Text>Integer value (if applicable)</Text>
+            <Description/>
+            <Note/>
+            <Bitmap></Bitmap>
+        </Item>
+        <Item>
+            <TextId>1006</TextId>
+            <Text>Floating–point value (if applicable)</Text>
+            <Description/>
+            <Note/>
+            <Bitmap></Bitmap>
+        </Item>
+        <Item>
+            <TextId>1007</TextId>
+            <Text>Text value (if applicable)</Text>
+            <Description/>
+            <Note/>
+            <Bitmap></Bitmap>
+        </Item>
+        <Item>
+            <TextId>1008</TextId>
+            <Text>List representation of the result</Text>
             <Description/>
             <Note/>
             <Bitmap></Bitmap>
