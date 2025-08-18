@@ -11,30 +11,36 @@ This repository offers a collection of custom VisualScripting nodes designed to 
 - **Easy-to-use custom nodes**
 - Seamlessly integrated into the ALLPLAN VisualScripting library
 
-## Requirements
-
-- ALLPLAN 2026 or later
-
 ## Installation
 
-1. **Download** the custom nodes into the VisualScripting directory with the ALLPLAN Content connector.
-2. The new nodes will appear in the Custom Library.
+**Custom VS Nodes From Allplan France** can be installed directly from the Plugin Manager in ALLPLAN.
+Alternatively, the corresponding .allep package can be downloaded from the [release page](https://github.com/cmaignan-source/vsnodes/releases). *.allep* files are ALLPLAN extension packages that can be installed via drag and drop into the program window.
 
-## Usage
+## Requirements
 
-- Create a new VisualScripting project in ALLPLAN.
-- Drag and drop the nodes from this project into your workspace.
+- ALLPLAN >= 2026
+
+## Installed Assets
+
+The plugin installs following assets into ALLPLAN:
+
+- VisualScripting nodes:
+  - CommandBlock
+
+They can be found in the Visual Editor under `Custom Library` → `STD` → `ALLPLAN FRANCE`
+
+## Workflow
+
+- Open the ALLPLAN VisualScripting application.
+- Drag and drop the nodes from the Custom Library into your workspace.
 - Configure their properties according to your needs (geometry, logic, input/output).
 - Connect the nodes to create data flows or action sequences.
-- Run the script: the result will be displayed in real time within the ALLPLAN view.
+- Start the script: the result will be displayed in real time within the ALLPLAN view.
+- Save your project as a *.avsprj* and create a *.pyp* script.
 
 ## Contributing
 
 Contributions are welcome! You can propose new nodes, report bugs, or suggest improvements by opening an issue or a pull request.
-
-## Documentation & Resources
-
-- PythonParts API : https://pythonparts.allplan.com
 
 ## License
 
