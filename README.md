@@ -1,4 +1,4 @@
-# Custom Node Collection for ALLPLAN VisualScripting
+# Custom Nodes Collection for ALLPLAN VisualScripting
 
 Welcome to this GitHub project — a **set of custom nodes** for the **ALLPLAN** VisualScripting solution.
 
@@ -27,6 +27,8 @@ The plugin installs following assets into ALLPLAN:
 
 - VisualScripting nodes:
   - CommandBlock
+  - ListSplitByBool
+  - OperatorModulo
 
 They can be found in the Visual Editor under `Custom Library` → `STD` → `ALLPLAN FRANCE`
 
