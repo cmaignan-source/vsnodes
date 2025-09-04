@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?><Element>
+    <StringTable text="Allplan OperatorModulo NodeScript stringtable"></StringTable>
+    <Node Name="NodeOperatorModulo">
+        <Item>
+            <TextId>1001</TextId>
+            <Text>Calcule le reste d'une division</Text>
+            <Description>Cette opération est utile pour vérifier certaines propriétés&#xA;
+**Exemples :**&#xA;
+- Vérifier si un nombre X est pair :&#xA;`X % 2 == 0`&#xA;
+- Ramener un angle X dans l’intervalle (0, 360) :&#xA;`X % 360`&#xA;
+
+## Liens
+
+[Aide](https://github.com/cmaignan-source/vsnodes/blob/main/VisualScripts/ALLPLAN%20FRANCE/README-OperatorModulo.md)</Description>
+            <Note/>
+            <Bitmap></Bitmap>
+        </Item>
+        <Item>
+            <TextId>1002</TextId>
+            <Text>X</Text>
+            <Description>X (dividende)</Description>
+            <Note/>
+            <Bitmap></Bitmap>
+        </Item>
+        <Item>
+            <TextId>1003</TextId>
+            <Text>Y</Text>
+            <Description>Y (diviseur)</Description>
+            <Note/>
+            <Bitmap></Bitmap>
+        </Item>
+        <Item>
+            <TextId>1004</TextId>
+            <Text>Résultat</Text>
+            <Description/>
+            <Note/>
+            <Bitmap></Bitmap>
+        </Item>
+    </Node>
+</Element>

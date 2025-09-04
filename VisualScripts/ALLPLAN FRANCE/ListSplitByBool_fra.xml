@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?><Element>
+    <StringTable>Allplan ListSplitByBool NodeScript stringtable</StringTable>
+    <Node Name="NodeListSplitByBool">
+      <Item>
+          <TextId>1001</TextId>
+          <Text>Divise une liste en deux selon un masque booléen</Text>
+          <Description>Divise une liste en deux selon un masque booléen&#xA;
+- **Vrai** éléments sur une liste&#xA;
+- **Faux** éléments sur une autre liste&#xA;(par défault si le masque booléen n'est pas défini)&#xA;
+
+## Liens
+
+[Aide](https://github.com/cmaignan-source/vsnodes/blob/main/VisualScripts/ALLPLAN%20FRANCE/README-ListSplitByBool.md)</Description>
+            <Note/>
+            <Bitmap></Bitmap>
+        </Item>
+        <Item>
+            <TextId>1002</TextId>
+            <Text>Liste à diviser</Text>
+            <Description/>
+            <Note/>
+            <Bitmap></Bitmap>
+        </Item>
+        <Item>
+            <TextId>1003</TextId>
+            <Text>Masque booléen</Text>
+            <Description/>
+            <Note/>
+            <Bitmap></Bitmap>
+        </Item>
+        <Item>
+            <TextId>1004</TextId>
+            <Text>Vrai</Text>
+            <Description>Nouvelle liste si la valeur à tester est **vraie**</Description>
+            <Note/>
+            <Bitmap></Bitmap>
+        </Item>
+        <Item>
+            <TextId>1005</TextId>
+            <Text>Faux</Text>
+            <Description>Nouvelle liste si la valeur à tester est **fausse**</Description>
+            <Note/>
+            <Bitmap></Bitmap>
+        </Item>
+    </Node>
+</Element>

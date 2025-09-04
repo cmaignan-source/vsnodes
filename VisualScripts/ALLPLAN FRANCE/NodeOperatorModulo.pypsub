@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Element>
+    <LanguageFile>.\OperatorModulo</LanguageFile>
+    <Script>
+        <Name>.\NodeOperatorModulo.py</Name>
+        <Uuid>3F7B9D20-6A84-4B71-B6AC-3B0A1C9F812E</Uuid>
+        <Title>Calculates the remainder of a division operation with two variables: x and y.</Title>
+        <TextId>1001</TextId>
+        <Version>0.1.0</Version>
+    </Script>
+    <Page>
+        <Name>Modulo</Name>
+        <Parameter>
+            <Name>ModuloExpander</Name>
+            <Text>Modulo (x % y)</Text>
+            <Value>False</Value>
+            <ValueType>Expander</ValueType>
+            <Parameter>
+                <Name>X</Name>
+                <Text>X</Text>
+                <TextId>1002</TextId>
+                <Value></Value>
+                <ValueType>list{Integer;Double;Length;Area;Volume;Angle;Weight}</ValueType>
+            </Parameter>
+            <Parameter>
+                <Name>Y</Name>
+                <Text>Y</Text>
+                <TextId>1003</TextId>
+                <Value></Value>
+                <ValueType>object{Integer;Double}</ValueType>
+            </Parameter>
+        </Parameter>
+    </Page>
+    <Page>
+        <Name>__OUT__</Name>
+        <Parameter>
+            <Name>Result</Name>
+            <Text>Result</Text>
+            <TextId>1004</TextId>
+            <Value></Value>
+            <ValueType>list{}</ValueType>
+        </Parameter>
+    </Page>
+    <Page>
+        <Name>__HiddenPage__</Name>
+        <Parameter>
+            <Name>Executed</Name>
+            <Value>False</Value>
+            <ValueType>CheckBox</ValueType>
+        </Parameter>
+    </Page>
+</Element>

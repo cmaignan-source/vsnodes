@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Element>
+    <LanguageFile>.\ListSplitByBool</LanguageFile>
+    <Script>
+        <Name>.\NodeListSplitByBool.py</Name>
+        <Uuid>9C2F4A77-1B3D-4A6F-9E21-8F5A0C7D4B3E</Uuid>
+        <Title>Split one list into two lists using a boolean mask</Title>
+        <TextId>1001</TextId>
+        <Version>0.1.0</Version>
+    </Script>
+    <Page>
+        <Name>__IN_MANDATORY__</Name>
+        <Parameter>
+            <Name>ListToSplit</Name>
+            <Text>List to split</Text>
+            <TextId>1002</TextId>
+            <Value></Value>
+            <ValueType>list{}</ValueType>
+        </Parameter>
+    </Page>
+    <Page>
+        <Name>ListToSplitByBool</Name>
+        <Parameter>
+            <Name>ListToSplitByBoolExpander</Name>
+            <Text>ListToSplitByBool</Text>
+            <Value>False</Value>
+            <ValueType>Expander</ValueType>
+            <Parameter>
+                <Name>BoolMask</Name>
+                <Text>Boolean mask</Text>
+                <TextId>1003</TextId>
+                <Value></Value>
+                <ValueType>list{CheckBox;Integer}</ValueType>
+            </Parameter>
+        </Parameter>
+    </Page>
+    <Page>
+        <Name>__OUT__</Name>
+        <Parameter>
+            <Name>ListIfTrue</Name>
+            <Text>True</Text>
+            <TextId>1004</TextId>
+            <Value>[]</Value>
+            <ValueType>list{}</ValueType>
+        </Parameter>
+        <Parameter>
+            <Name>ListIfFalse</Name>
+            <Text>False</Text>
+            <TextId>1005</TextId>
+            <Value>[]</Value>
+            <ValueType>list{}</ValueType>
+        </Parameter>
+    </Page>
+    <Page>
+        <Name>__HiddenPage__</Name>
+        <Parameter>
+            <Name>Executed</Name>
+            <Value>False</Value>
+            <ValueType>CheckBox</ValueType>
+        </Parameter>
+    </Page>
+</Element>

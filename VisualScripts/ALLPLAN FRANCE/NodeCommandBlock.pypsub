@@ -6,7 +6,7 @@
         <Uuid>D468EEBE-5901-465C-818D-BBE7B45D9158</Uuid>
         <Title>Execute instruction within the visual workflow</Title>
         <TextId>1001</TextId>
-        <Version>0.2.0</Version>
+        <Version>0.2.1</Version>
     </Script>
     <Page>
         <Name>CommandBlock</Name>
@@ -18,13 +18,7 @@
             <ValueType>Expander</ValueType>
             <Parameter>
                 <Name>Command</Name>
-                <Text>Command&#xA;
-single–line string containing an instruction for :&#xA;
-1) single value handling (integer, decimal or text)&#xA;
-2) mathematical operations (+, -, *, /, pi, cos, ...)&#xA;
-3) manual list creation ("toto|tata|titi")&#xA;
-4) complex sequence generation (start..end, start..end..step, start..end..@count, start..@count..end)&#xA;
-5) random value generation (rand(min, max, count) or randf(min, max, count[, precision]))</Text>
+                <Text>Command</Text>
                 <TextId>1003</TextId>
                 <Value></Value>
                 <ValueType>String</ValueType>
@@ -70,16 +64,6 @@ single–line string containing an instruction for :&#xA;
         <Name>__HiddenPage__</Name>
         <Parameter>
             <Name>Executed</Name>
-            <Value>False</Value>
-            <ValueType>CheckBox</ValueType>
-        </Parameter>
-        <Parameter>
-            <Name>CreateModelObjects</Name>
-            <Value>False</Value>
-            <ValueType>CheckBox</ValueType>
-        </Parameter>
-        <Parameter>
-            <Name>CreateModelPreviewObjects</Name>
             <Value>False</Value>
             <ValueType>CheckBox</ValueType>
         </Parameter>

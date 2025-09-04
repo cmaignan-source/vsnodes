@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?><Element>
+    <StringTable text="Allplan OperatorModulo NodeScript stringtable"></StringTable>
+    <Node Name="NodeOperatorModulo">
+        <Item>
+            <TextId>1001</TextId>
+            <Text>Calculates the remainder of a division operation</Text>
+            <Description>This operation is useful for checking properties&#xA;
+**Examples :**&#xA;
+- check if a number X is even:&#xA;`X % 2 == 0`&#xA;
+- normalize an angle X in the range (0, 360):&#xA;`X % 360`&#xA;
+
+## Links
+
+[Help](https://github.com/cmaignan-source/vsnodes/blob/main/VisualScripts/ALLPLAN%20FRANCE/README-OperatorModulo.md)</Description>
+            <Note/>
+            <Bitmap></Bitmap>
+        </Item>
+        <Item>
+            <TextId>1002</TextId>
+            <Text>X</Text>
+            <Description>X (dividend)</Description>
+            <Note/>
+            <Bitmap></Bitmap>
+        </Item>
+        <Item>
+            <TextId>1003</TextId>
+            <Text>Y</Text>
+            <Description>Y (divisor)</Description>
+            <Note/>
+            <Bitmap></Bitmap>
+        </Item>
+        <Item>
+            <TextId>1004</TextId>
+            <Text>Result</Text>
+            <Description/>
+            <Note/>
+            <Bitmap></Bitmap>
+        </Item>
+    </Node>
+</Element>
