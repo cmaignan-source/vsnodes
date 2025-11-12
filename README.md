@@ -27,8 +27,12 @@ The plugin installs following assets into ALLPLAN:
 
 - VisualScripting nodes:
   - CommandBlock
+  - IfElse
   - ListSplitByBool
+  - LoopFor
+  - MatchCase
   - OperatorModulo
+  - SetOrCreateAttribute
 
 They can be found in the Visual Editor under `Custom Library` → `STD` → `ALLPLAN FRANCE`
 
