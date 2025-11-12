@@ -5,7 +5,7 @@
             <TextId>1001</TextId>
             <Text>Calculates the remainder of a division operation</Text>
             <Description>This operation is useful for checking properties&#xA;
-**Examples :**&#xA;
+**Examples:**&#xA;
 - check if a number X is even:&#xA;`X % 2 == 0`&#xA;
 - normalize an angle X in the range (0, 360):&#xA;`X % 360`&#xA;
 

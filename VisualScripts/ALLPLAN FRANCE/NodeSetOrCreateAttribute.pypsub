@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Element>
+    <LanguageFile>.\AttributesManagement</LanguageFile>
+    <Script>
+        <Name>.\NodeSetOrCreateAttribute.py</Name>
+        <Uuid>DF428796-25D8-41ED-9E36-84CDFB08FEDC</Uuid>
+        <Title>Set or create an attribute using PythonPart framework</Title>
+        <TextId>1901</TextId>
+        <Version>0.1.0</Version>
+    </Script>
+    <Page>
+        <Name>__IN_MANDATORY__</Name>
+        <Parameter>
+            <Name>AttributeName</Name>
+            <Text>Attribute name</Text>
+            <TextId>1902</TextId>
+            <Value></Value>
+            <ValueType>object{String;StringComboBox;DynamicStringComboBox}</ValueType>
+        </Parameter>
+    </Page>
+    <Page>
+        <Name>Value</Name>
+        <Parameter>
+            <Name>AttributeValue</Name>
+            <Text>Attribute value</Text>
+            <TextId>1903</TextId>
+            <Value></Value>
+            <ValueType>object{String;StringComboBox;DynamicStringComboBox;Integer;Double;Length;Angle;Area;Volume;Angle;Weight;Date;ReinfBarDiameter;ReinfConcreteCover}</ValueType>
+        </Parameter>
+    </Page>
+    <Page>
+        <Name>__OUT__</Name>
+        <Parameter>
+            <Name>AttributeID</Name>
+            <Text>Attribute ID</Text>
+            <TextId>1904</TextId>
+            <Value></Value>
+            <ValueType>object{Integer}</ValueType>
+        </Parameter>
+    </Page>
+    <Page>
+        <Name>__HiddenPage__</Name>
+        <Parameter>
+            <Name>Executed</Name>
+            <Value>False</Value>
+            <ValueType>CheckBox</ValueType>
+        </Parameter>
+    </Page>
+</Element>

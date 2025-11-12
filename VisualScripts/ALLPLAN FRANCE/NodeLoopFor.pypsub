@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Element>
+    <LanguageFile>.\Loop</LanguageFile>
+    <Script>
+        <Name>.\NodeLoopFor.py</Name>
+        <Uuid>1988ED8A-7CFA-4C7F-8077-57375BF1B900</Uuid>
+        <Title>Executes a for-loop operation</Title>
+        <TextId>1001</TextId>
+        <Version>0.1.0</Version>
+    </Script>
+    <Page>
+        <Name>__IN_MANDATORY__</Name>
+        <Parameter>
+            <Name>Repeat</Name>
+            <Text>Repeat</Text>
+            <TextId>1002</TextId>
+            <Value></Value>
+            <ValueType>object{Integer}</ValueType>
+        </Parameter>
+    </Page>
+    <Page>
+        <Name>__IN_OPTIONAL__</Name>
+        <Parameter>
+            <Name>Function</Name>
+            <Text>Function</Text>
+            <TextId>1003</TextId>
+            <Value/>
+            <ValueType>list{}</ValueType>
+        </Parameter>
+    </Page>
+    <Page>
+        <Name>__OUT__</Name>
+        <Parameter>
+            <Name>Result</Name>
+            <Text>Result</Text>
+            <TextId>1004</TextId>
+            <Value></Value>
+            <ValueType>list{}</ValueType>
+        </Parameter>
+    </Page>
+    <Page>
+        <Name>__HiddenPage__</Name>
+        <Parameter>
+            <Name>Executed</Name>
+            <Value>False</Value>
+            <ValueType>CheckBox</ValueType>
+        </Parameter>
+    </Page>
+</Element>

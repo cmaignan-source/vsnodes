@@ -9,7 +9,7 @@
 2. **2)** mathematical operations&#xA;`+, -, *, /, pi, cos, ...`&#xA;
 3. **3)** manual list creation&#xA;`toto|tata|titi`&#xA;
 4. **4)** complex sequence generation&#xA;`start..end`&#xA;`start..end..step`&#xA;`start..end..@count`&#xA;`start..@count..end`&#xA;
-5. **5)** random value generation&#xA;`rand(min, max, count)`&#xA;`randf(min, max, count[, precision])`&#xA;
+5. **5)** random value generation (sorted or not)&#xA;`rand(min, max, count[, 'raw'])`&#xA;`randf(min, max, count[, precision, 'raw'])`&#xA;
 
 ## Links
 

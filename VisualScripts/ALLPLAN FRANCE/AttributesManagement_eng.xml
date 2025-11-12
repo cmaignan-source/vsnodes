@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Element>
+    <StringTable text="Allplan Attributes NodeScripts stringtable"></StringTable>
+    <Node Name="NodeSetOrCreateAttribute">
+        <Item>
+            <TextId>1901</TextId>
+            <Text>Set or create an attribute using PythonPart framework</Text>
+            <Description>This node sets the value of an existing attribute or creates it if it does not exist in the current project&#xA;
+**Typical Use:**&#xA;
+attribute as `string`&#xA;
+attribute as `integer` (included checkbox)&#xA;
+attribute as `double`&#xA;
+attribute as `date`&#xA;
+- attribute as `enum` (for predefined list selections)&#xA;
+
+- **Examples:**&#xA;
+AttributeName='TEST_STRING' (not exists)&#xA;
+AttributeValue='TEST_VALUE'&#xA;
+**Result**:&#xA;
+Create a new attribute 'TEST_STRING' as **Text** (type of the value)&#xA;
+- Set this new attribute to the PythonPart object with 'TEST_VALUE' as value&#xA;
+
+- AttributeName='TEST_LIST' (existing **ListBox** as `VALUE_0|VALUE_1|VALUE_2`)&#xA;
+AttributeValue=1&#xA;
+**Result**:&#xA;
+- Set this attribute to the PythonPart object with 'VALUE_1' as value&#xA;
+
+## Links
+
+[Help](https://github.com/cmaignan-source/vsnodes/blob/main/VisualScripts/ALLPLAN%20FRANCE/README-SetOrCreateAttribute.md)</Description>
+            <Note/>
+            <Bitmap></Bitmap>
+        </Item>
+        <Item>
+            <TextId>1902</TextId>
+            <Text>Attribute name</Text>
+            <Description/>
+            <Note/>
+            <Bitmap></Bitmap>
+        </Item>
+        <Item>
+            <TextId>1903</TextId>
+            <Text>Attribute value</Text>
+            <Description/>
+            <Note/>
+            <Bitmap></Bitmap>
+        </Item>
+        <Item>
+            <TextId>1904</TextId>
+            <Text>Attribute ID</Text>
+            <Description/>
+            <Note/>
+            <Bitmap></Bitmap>
+        </Item>
+    </Node>
+</Element>

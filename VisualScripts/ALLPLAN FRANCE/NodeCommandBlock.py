@@ -110,14 +110,22 @@ class NodeCommandBlock(NodeBase):
         elif text.lower().startswith("rand(") and text.endswith(")"):
             try:
                 args = [a.strip() for a in text[5:-1].split(",")]
-                if len(args) != 3:
-                    raise ValueError("rand(min,max,count)")
+                if len(args) not in (3, 4):
+                    raise ValueError("rand(min,max,count) or rand(min,max,count[,'raw'])")
                 min_val = int(args[0])
                 max_val = int(args[1])
+                if min_val > max_val:
+                    min_val, max_val = max_val, min_val
                 count = int(args[2])
-                if count > (max_val - min_val + 1):
-                    raise ValueError("Count too large for unique integers in range")
-                seq = sorted(random.sample(range(min_val, max_val + 1), count))
+                mode = str(args[3]) if len(args) == 4 else "unique"
+                if mode == "raw":
+                    seq = [random.randint(min_val, max_val) for _ in range(count)]
+                elif mode == "unique":
+                    if count > (max_val - min_val + 1):
+                        raise ValueError("Count too large for unique integers in range")
+                    seq = sorted(random.sample(range(min_val, max_val + 1), count))
+                else:
+                    raise ValueError(f"Unknown mode: {mode}")
                 self.build_ele.AsList.value = seq
             except Exception as e:
                 self.build_ele.AsString.value = f"Random error: {e}"
@@ -126,23 +134,31 @@ class NodeCommandBlock(NodeBase):
         elif text.lower().startswith("randf(") and text.endswith(")"):
             try:
                 args = [a.strip() for a in text[6:-1].split(",")]
-                if len(args) not in (3, 4):
-                    raise ValueError("randf(min,max,count[,precision])")
+                if len(args) not in (3, 4, 5):
+                    raise ValueError("randf(min,max,count[,precision]) or randf(min,max,count[,precision, 'raw'])")
                 min_val = float(args[0])
                 max_val = float(args[1])
+                if min_val > max_val:
+                    min_val, max_val = max_val, min_val
                 count = int(args[2])
-                precision = int(args[3]) if len(args) == 4 else 3
-                # Avoid infinite loop if request is impossible
-                max_unique_values = int((max_val - min_val) * (10 ** precision)) + 1
-                if count > max_unique_values:
-                    raise ValueError(
-                        f"Unable to generate {count} unique values "
-                        f"with precision {precision} over the range {min_val}-{max_val}"
-                    )
-                seen = set()
-                while len(seen) < count:
-                    seen.add(round(random.uniform(min_val, max_val), precision))
-                seq = sorted(seen)
+                precision = int(args[3]) if len(args) >= 4 and args[3].isdigit() else 3
+                mode = str(args[4]) if len(args) == 5 else "unique"
+                if mode == "raw":
+                    seq = [round(random.uniform(min_val, max_val), precision) for _ in range(count)]
+                elif mode == "unique":
+                    # Avoid infinite loop if request is impossible
+                    max_unique_values = int((max_val - min_val) * (10 ** precision)) + 1
+                    if count > max_unique_values:
+                        raise ValueError(
+                            f"Unable to generate {count} unique values"
+                            f"with precision {precision} over the range {min_val}-{max_val}"
+                        )
+                    seen = set()
+                    while len(seen) < count:
+                        seen.add(round(random.uniform(min_val, max_val), precision))
+                    seq = sorted(seen)
+                else:
+                    raise ValueError(f"Unknown mode: {mode}")
                 self.build_ele.AsList.value = seq
             except Exception as e:
                 self.build_ele.AsString.value = f"Random error: {e}"

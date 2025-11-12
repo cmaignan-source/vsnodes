@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Element>
+    <LanguageFile>.\IfElse</LanguageFile>
+    <Script>
+        <Name>.\NodeIfElse.py</Name>
+        <Uuid>A2C9E8F1-4B27-4C6C-9C9F-3B5F8C7D1234</Uuid>
+        <Title>Conditional If Else statement</Title>
+        <TextId>1001</TextId>
+        <Version>0.1.0</Version>
+    </Script>
+    <Page>
+        <Name>__IN_MANDATORY__</Name>
+        <Parameter>
+            <Name>Condition</Name>
+            <Text>Condition</Text>
+            <TextId>1002</TextId>
+            <Value></Value>
+            <ValueType>list{Checkbox;Integer}</ValueType>
+        </Parameter>
+    </Page>
+    <Page>
+        <Name>TrueFalse</Name>
+        <Parameter>
+            <Name>OnTrue</Name>
+            <Text>Result for true condition</Text>
+            <TextId>1003</TextId>
+            <Value></Value>
+            <ValueType>list{}</ValueType>
+        </Parameter>
+        <Parameter>
+            <Name>OnFalse</Name>
+            <Text>Result if condition is false</Text>
+            <TextId>1004</TextId>
+            <Value></Value>
+            <ValueType>list{}</ValueType>
+        </Parameter>
+    </Page>
+    <Page>
+        <Name>__OUT__</Name>
+        <Parameter>
+            <Name>Result</Name>
+            <Text>Result</Text>
+            <TextId>1005</TextId>
+            <Value></Value>
+            <ValueType>list{}</ValueType>
+        </Parameter>
+    </Page>
+    <Page>
+        <Name>__HiddenPage__</Name>
+        <Parameter>
+            <Name>CreateModelObjects</Name>
+            <Value>False</Value>
+            <ValueType>CheckBox</ValueType>
+        </Parameter>
+        <Parameter>
+            <Name>CreateModelPreviewObjects</Name>
+            <Value>False</Value>
+            <ValueType>CheckBox</ValueType>
+        </Parameter>
+        <Parameter>
+            <Name>Executed</Name>
+            <Value>False</Value>
+            <ValueType>CheckBox</ValueType>
+        </Parameter>
+    </Page>
+</Element>

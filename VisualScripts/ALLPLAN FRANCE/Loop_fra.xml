@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Element>
+    <StringTable text="Allplan LoopFor NodeScript stringtable"></StringTable>
+    <Node Name="NodeLoopFor">
+        <Item>
+            <TextId>1001</TextId>
+            <Text>Exécute une opération de boucle For</Text>
+            <Description>Ce nœud exécute une boucle for qui itère sur une plage de valeurs définie, en lançant les opérations connectées à chaque étape jusqu’à atteindre la valeur limite.&#xA;
+Le résultat `Result` du nœud **LoopFor** :&#xA;
+si une seule opération est connectée, il s’agit d’une liste&#xA;
+- si plusieurs opérations sont connectées, il s’agit d’une liste contenant plusieurs listes de résultats, une par opération (l’accès à chacune de ces listes peut se faire via le nœud de base **ListItem**)&#xA;
+
+- **Exemples :**&#xA;
+
+- `Repeat`=10&#xA;
+`Function`:&#xA;
+**LoopOperation**&#xA;(`InitValue`=0, `Operand`=1, `Operation`='+')&#xA;
+`Result`:&#xA;
+- ➔ `[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]`&#xA;
+
+- `Repeat`=3&#xA;
+`Function`:&#xA;
+**LoopOperation**&#xA;(`InitValue`=0, `Operand`=1, `Operation`='+')&#xA;
+**LoopOperation**&#xA;(`InitValue`=2, `Operand`=2, `Operation`='*')&#xA;
+`Result`:&#xA;
+- ➔ `[[1, 2, 3], [4, 8, 16]]`&#xA;
+
+- `Repeat`=5&#xA;
+`Function`:&#xA;
+**LoopOperation**&#xA;(`InitValue`=**Box**, `Operand`='', `Operation`='')&#xA;
+`Result`:&#xA;
+- ➔ `[Polyhedron3D, Polyhedron3D, Polyhedron3D, Polyhedron3D, Polyhedron3D]`&#xA;
+
+
+## Liens
+
+[Aide](https://github.com/cmaignan-source/vsnodes/blob/main/VisualScripts/ALLPLAN%20FRANCE/README-LoopFor.md)</Description>
+            <Note/>
+            <Bitmap></Bitmap>
+        </Item>
+        <Item>
+            <TextId>1002</TextId>
+            <Text>Répéter</Text>
+            <Description>Plage de la boucle</Description>
+            <Note/>
+            <Bitmap></Bitmap>
+        </Item>
+        <Item>
+            <TextId>1003</TextId>
+            <Text>Function</Text>
+            <Description>Liste de nœuds **LoopOperation**</Description>
+            <Note/>
+            <Bitmap></Bitmap>
+        </Item>
+        <Item>
+            <TextId>1004</TextId>
+            <Text>Résultat</Text>
+            <Description/>
+            <Note/>
+            <Bitmap></Bitmap>
+        </Item>
+    </Node>
+    <Node Name="NodeLoopOperation">
+        <Item>
+            <TextId>1101</TextId>
+            <Text>Opération individuelle pour le nœud LoopFor</Text>
+            <Description>Définit une opération à utiliser dans un nœud **LoopFor**.&#xA;
+Le nœud **LoopOperation** déclare une opération mathématique sur une valeur numérique lors de chaque itération dans la boucle.&#xA;
+Si la valeur initiale est un objet géométrique, les entrées `Operand` et `Operation` sont ignorées.&#xA;
+
+**Utilisation typique :**&#xA;
+- définir `InitValue` et `Operand` avec des valeurs numériques, puis spécifier `Operation` avec un opérateur mathématique, par exemple '+'&#xA;
+- définir `InitValue` comme un objet géométrique si aucune opération mathématique n’est requise (les entrées `Operand` et `Operation` sont alors ignorées)&#xA;
+
+## Liens
+
+[Aide](https://github.com/cmaignan-source/vsnodes/blob/main/VisualScripts/ALLPLAN%20FRANCE/README-LoopFor.md)</Description>
+            <Note/>
+            <Bitmap></Bitmap>
+        </Item>
+        <Item>
+            <TextId>1102</TextId>
+            <Text>Valeur initiale</Text>
+            <Description>Définit la valeur ou l’objet initial utilisé au début de la boucle</Description>
+            <Note/>
+            <Bitmap></Bitmap>
+        </Item>
+        <Item>
+            <TextId>1103</TextId>
+            <Text>Opérande</Text>
+            <Description>Spécifie la valeur numérique utilisée dans l’opération mathématique appliquée à chaque itération</Description>
+            <Note/>
+            <Bitmap></Bitmap>
+        </Item>
+        <Item>
+        <TextId>1104</TextId>
+            <Text>Opération</Text>
+            <Description>Définit l’opérateur mathématique (par exemple '+', '-', '*', '/') appliqué à `InitValue` et `Operand`</Description>
+            <Note/>
+            <Bitmap></Bitmap>
+        </Item>
+        <Item>
+            <TextId>1105</TextId>
+            <Text>Résultat</Text>
+            <Description/>
+            <Note/>
+            <Bitmap></Bitmap>
+        </Item>
+    </Node>
+</Element>

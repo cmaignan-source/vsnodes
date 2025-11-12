@@ -6,7 +6,7 @@
         <Uuid>D468EEBE-5901-465C-818D-BBE7B45D9158</Uuid>
         <Title>Execute instruction within the visual workflow</Title>
         <TextId>1001</TextId>
-        <Version>0.2.1</Version>
+        <Version>0.3.0</Version>
     </Script>
     <Page>
         <Name>CommandBlock</Name>

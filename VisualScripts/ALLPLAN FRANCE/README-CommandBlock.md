@@ -18,10 +18,10 @@ It acts as a **multi-purpose interpreter** that can:
 
 ## 1. Input / Outputs
 
-**Input:**  
-A single–line string containing an instruction.  
+**Input:**
+A single–line string containing an instruction.
 
-**Outputs:**  
+**Outputs:**
 - `AsInteger`
 - `AsDouble`
 - `AsString`
@@ -35,15 +35,15 @@ The script detects the type of result and fills the relevant outputs accordingly
 
 If the input is a **single value** without special syntax:
 
-- **Integer**  
-  - `AsInteger` = integer value  
-  - `AsDouble` = same value as float  
-  - `AsList` = list with a single integer  
-- **Decimal**  
-  - `AsDouble` = float value  
-  - `AsList` = list with a single float  
-- **Text**  
-  - `AsString` = string value  
+- **Integer**
+  - `AsInteger` = integer value
+  - `AsDouble` = same value as float
+  - `AsList` = list with a single integer
+- **Decimal**
+  - `AsDouble` = float value
+  - `AsList` = list with a single float
+- **Text**
+  - `AsString` = string value
   - `AsList` = list with a single string
 
 **Examples:**
@@ -60,7 +60,7 @@ Supports **basic arithmetic**, **trigonometric functions**, and **mathematical c
 - **Operators**: `+  -  *  /  %  **  ( )`
 - **Math constants**: `pi`
 - **Math functions**:
-  - `abs(x)` — absolute value (float) 
+  - `abs(x)` — absolute value (float)
   - `sqrt(x)` — square root
   - `pow(x, y)` — power
   - `rad(deg)` — convert degrees to radians
@@ -68,7 +68,7 @@ Supports **basic arithmetic**, **trigonometric functions**, and **mathematical c
   - `sin(x)`, `cos(x)`, `tan(x)` — trigonometry (in radians)
   - `asin(x)`, `acos(x)`, `atan(x)` — inverse trig (returns radians)
   - `log(x)`, `log10(x)`, `exp(x)`
-  
+
 **Examples:**
 - "5+5" → AsInteger=10, AsDouble=10.0, AsList=[10]
 - "sqrt(9)" → AsInteger=3, AsDouble=3.0, AsList=[3]
@@ -116,16 +116,18 @@ Using `..` notation, the script supports several formats:
 Two syntaxes are supported:
 
 - **Unique random integers**:
-rand(min, max, count)
+rand(min, max, count[, 'raw'])
 
 Generates `count` unique integers in `[min, max]` inclusive, sorted ascending.
 
 - **Unique random floats**:
-randf(min, max, count[, precision])
+randf(min, max, count[, precision, 'raw'])
 
-Generates `count` unique floats in `[min, max]` inclusive, sorted ascending.  
+Generates `count` unique floats in `[min, max]` inclusive, sorted ascending.
 Precision defaults to **3 decimals** if not specified.
+With `raw` as last argument, the list will **not** be sorted.
 
 **Examples:**
 - "rand(1,10,5)" → AsList=[1,2,3,7,10]
+- "rand(1,10,3,raw)" → AsList=[8,3,4]
 - "randf(0,1,5,2)" → AsList=[0.53,0.70,0.75,0.79,0.84]

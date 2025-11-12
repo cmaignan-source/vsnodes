@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Element>
+    <LanguageFile>.\MatchCase</LanguageFile>
+    <Script>
+        <Name>.\NodeCase.py</Name>
+        <Uuid>930F43A2-4E86-47B8-90B7-8469172B1CDF</Uuid>
+        <Title>Individual case for MatchCase node</Title>
+        <TextId>1101</TextId>
+        <Version>0.1.0</Version>
+    </Script>
+    <Page>
+        <Name>CasePage</Name>
+        <Parameter>
+            <Name>MatchValue</Name>
+            <Text>Value to compare</Text>
+            <TextId>1102</TextId>
+            <Value></Value>
+            <ValueType>list{}</ValueType>
+        </Parameter>
+        <Parameter>
+            <Name>Function</Name>
+            <Text>Function to execute</Text>
+            <TextId>1103</TextId>
+            <Value></Value>
+            <ValueType>list{}</ValueType>
+        </Parameter>
+    </Page>
+    <Page>
+        <Name>__OUT__</Name>
+        <Parameter>
+            <Name>Result</Name>
+            <Text>Result</Text>
+            <TextId>1104</TextId>
+            <Value></Value>
+            <ValueType>list{}</ValueType>
+        </Parameter>
+    </Page>
+    <Page>
+        <Name>__HiddenPage__</Name>
+        <Parameter>
+            <Name>Executed</Name>
+            <Value>False</Value>
+            <ValueType>CheckBox</ValueType>
+        </Parameter>
+    </Page>
+</Element>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Element>
+    <StringTable text="Allplan Attributes NodeScripts stringtable"></StringTable>
+    <Node Name="NodeSetOrCreateAttribute">
+        <Item>
+            <TextId>1901</TextId>
+            <Text>Définis ou crée un attribut via le framework PythonPart</Text>
+            <Description>Ce nœud définit la valeur d’un attribut existant ou le crée s’il n’existe pas encore dans le projet en cours&#xA;
+**Utilisation typique :**&#xA;
+attribut de type `texte`&#xA;
+attribut de type `nombre entier` (y compris case à cocher)&#xA;
+attribut de type `nombre décimal`&#xA;
+attribut de type `date`&#xA;
+- attribut de type `énumération` (pour des listes prédéfinies)&#xA;
+
+- **Exemples :**&#xA;
+AttributeName='TEST_STRING' (n'existe pas)&#xA;
+AttributeValue='TEST_VALUE'&#xA;
+**Résultat**:&#xA;
+Crée un nouvel attribut 'TEST_STRING' en tant que **Texte** (type de la valeur)&#xA;
+- Assigne cet attribut au PythonPart avec comme valeur 'TEST_VALUE'&#xA;
+
+- AttributeName='TEST_LIST' (attribut existant **Champ de liste** avec une sélection `VALUE_0|VALUE_1|VALUE_2`)&#xA;
+AttributeValue=1&#xA;
+**Résultat**:&#xA;
+- Assigne cet attribut au PythonPart avec comme valeur 'VALUE_1'&#xA;
+
+## Liens
+
+[Aide](https://github.com/cmaignan-source/vsnodes/blob/main/VisualScripts/ALLPLAN%20FRANCE/README-SetOrCreateAttribute.md)</Description>
+            <Note/>
+            <Bitmap></Bitmap>
+        </Item>
+        <Item>
+            <TextId>1902</TextId>
+            <Text>Nom de l'attribut</Text>
+            <Description/>
+            <Note/>
+            <Bitmap></Bitmap>
+        </Item>
+        <Item>
+            <TextId>1903</TextId>
+            <Text>Valeur de l'attribut</Text>
+            <Description/>
+            <Note/>
+            <Bitmap></Bitmap>
+        </Item>
+        <Item>
+            <TextId>1904</TextId>
+            <Text>ID de l'attribut</Text>
+            <Description/>
+            <Note/>
+            <Bitmap></Bitmap>
+        </Item>
+    </Node>
+</Element>

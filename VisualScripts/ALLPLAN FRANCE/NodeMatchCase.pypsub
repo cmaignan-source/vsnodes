@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Element>
+    <LanguageFile>.\MatchCase</LanguageFile>
+    <Script>
+        <Name>.\NodeMatchCase.py</Name>
+        <Uuid>A2C48E9D-5F73-4E3E-B8B2-7D0B1A6D1F03</Uuid>
+        <Title>Multiple pattern match / switch statement</Title>
+        <TextId>1001</TextId>
+        <Version>0.1.0</Version>
+    </Script>
+    <Page>
+        <Name>__IN_MANDATORY__</Name>
+        <Parameter>
+            <Name>Value</Name>
+            <Text>Value</Text>
+            <TextId>1002</TextId>
+            <Value></Value>
+            <ValueType>list{}</ValueType>
+        </Parameter>
+    </Page>
+    <Page>
+        <Name>CasesPage</Name>
+        <Parameter>
+            <Name>Cases</Name>
+            <Text>Cases</Text>
+            <TextId>1003</TextId>
+            <Value/>
+            <ValueType>list{}</ValueType>
+        </Parameter>
+        <Parameter>
+            <Name>Default</Name>
+            <Text>Default</Text>
+            <TextId>1004</TextId>
+            <Value/>
+            <ValueType>list{}</ValueType>
+        </Parameter>
+    </Page>
+    <Page>
+        <Name>__OUT__</Name>
+        <Parameter>
+            <Name>Result</Name>
+            <Text>Result</Text>
+            <TextId>1005</TextId>
+            <Value></Value>
+            <ValueType>list{}</ValueType>
+        </Parameter>
+    </Page>
+    <Page>
+        <Name>__HiddenPage__</Name>
+        <Parameter>
+            <Name>Executed</Name>
+            <Value>False</Value>
+            <ValueType>CheckBox</ValueType>
+        </Parameter>
+    </Page>
+</Element>
