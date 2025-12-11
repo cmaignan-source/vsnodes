@@ -53,4 +53,53 @@ AttributeValue=1&#xA;
             <Bitmap></Bitmap>
         </Item>
     </Node>
+    <Node Name="NodeChangeObjectAttribute">
+        <Item>
+            <TextId>1001</TextId>
+            <Text>Change la valeur d’un attribut d’un ou plusieurs éléments</Text>
+            <Description>Ce nœud modifie des éléments existants en définissant une nouvelle valeur pour l’un de leurs attributs ou en ajoutant l’attribut s’il n’existe pas.&#xA;
+- &#xA;
+- **Exemple :**&#xA;
+Objects=BaseElementAdapterList(...)&#xA;
+AttributeID=507&#xA;
+NewValue='Bonjour'&#xA;
+**Résultat** :&#xA;
+Modifie l'attribut **Désignation** par 'Bonjour'&#xA;
+A noter : 'NewValue' peut aussi être une liste ; dans ce cas, chaque élément reçoit une nouvelle valeur en fonction de son ordre dans la liste.&#xA;
+
+## Liens
+
+[Aide](https://github.com/cmaignan-source/vsnodes/blob/main/VisualScripts/ALLPLAN%20FRANCE/README-ChangeObjectAttribute.md)</Description>
+            <Note/>
+            <Bitmap></Bitmap>
+        </Item>
+        <Item>
+            <TextId>1002</TextId>
+            <Text>Objets</Text>
+            <Description/>
+            <Note/>
+            <Bitmap></Bitmap>
+        </Item>
+        <Item>
+            <TextId>1003</TextId>
+            <Text>ID de l'attribut</Text>
+            <Description/>
+            <Note/>
+            <Bitmap></Bitmap>
+        </Item>
+        <Item>
+            <TextId>1004</TextId>
+            <Text>Nouvelle valeur</Text>
+            <Description/>
+            <Note/>
+            <Bitmap></Bitmap>
+        </Item>
+        <Item>
+            <TextId>1005</TextId>
+            <Text>Objets modifiés</Text>
+            <Description/>
+            <Note/>
+            <Bitmap></Bitmap>
+        </Item>
+    </Node>
 </Element>
