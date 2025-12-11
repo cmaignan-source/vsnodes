@@ -26,6 +26,7 @@ Alternatively, the corresponding .allep package can be downloaded from the [rele
 The plugin installs following assets into ALLPLAN:
 
 - VisualScripting nodes:
+  - ChangeObjectAttribute
   - CommandBlock
   - IfElse
   - ListSplitByBool
