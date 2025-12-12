@@ -42,17 +42,25 @@ class NodeChangeObjectAttribute(NodeBase):
 
         if not attr_id or (attr_name := BaseElements.AttributeService.GetAttributeName(self.document, attr_id)) == '???':
             self.error = f"Attribute ID {attr_id} does not exist in this project"
+            return
 
-        if not values or values == []:
-            self.error = "NewValue cannot be empty"
+        if not values:
+            self.build_ele.ModifiedObjects.value = self.build_ele.Objects.value
+            return
 
         if isinstance(values, str):
             values = [values]
 
+        modified_objects = []
+
         for idx, obj in enumerate(objects):
+            if not isinstance(obj, ElementAdapter.BaseElementAdapter):
+                self.error = f"Each object must be a BaseElementAdapter, found {type(obj).__name__}"
+                continue
             element_adapters = ElementAdapter.BaseElementAdapterList()
             element_adapters.append(obj)
             new_value = values[idx] if idx < len(values) else values[-1]
             BaseElements.ElementsAttributeService.ChangeAttribute(attr_id, new_value, element_adapters)
+            modified_objects.append(obj)
 
-        self.build_ele.ModifiedObjects.value = NodeObjectUtil.create_base_element_adpter_list(objects)
+        self.build_ele.ModifiedObjects.value = NodeObjectUtil.create_base_element_adpter_list(modified_objects)
