@@ -34,6 +34,7 @@ The plugin installs following assets into ALLPLAN:
   - MatchCase
   - OperatorModulo
   - SetOrCreateAttribute
+  - SortObjectsByAttribute
 
 They can be found in the Visual Editor under `Custom Library` → `STD` → `ALLPLAN FRANCE`
 
