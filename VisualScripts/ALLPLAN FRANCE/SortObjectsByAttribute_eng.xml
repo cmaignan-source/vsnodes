@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Element>
+    <StringTable text="Allplan SortObjectsByAttribute NodeScript stringtable"></StringTable>
+    <Node Name="NodeSortObjectsByAttribute">
+        <Item>
+            <TextId>1001</TextId>
+            <Text>Sorts a list of model objects based on a specified attribute.</Text>
+            <Description>This operation sorts a list of Allplan objects according to the value of a given attribute.&#xA;
+- &#xA;
+- **Examples:**&#xA;
+sort objects by **Name** (attribute '507')&#xA;
+sort walls by their **Height** (attribute '222')&#xA;
+
+## Links
+
+[Help](https://github.com/cmaignan-source/vsnodes/blob/main/VisualScripts/ALLPLAN%20FRANCE/README-SortObjectsByAttribute.md)</Description>
+            <Note/>
+            <Bitmap></Bitmap>
+        </Item>
+        <Item>
+            <TextId>1002</TextId>
+            <Text>Objects</Text>
+            <Description>List of objects</Description>
+            <Note/>
+            <Bitmap></Bitmap>
+        </Item>
+        <Item>
+            <TextId>1003</TextId>
+            <Text>Attribute ID</Text>
+            <Description/>
+            <Note/>
+            <Bitmap></Bitmap>
+        </Item>
+        <Item>
+            <TextId>1004</TextId>
+            <Text>Objects with the attribute</Text>
+            <Description>Sorted list of objects with the specified attribute</Description>
+            <Note/>
+            <Bitmap></Bitmap>
+        </Item>
+        <Item>
+            <TextId>1005</TextId>
+            <Text>Objects without the attribute</Text>
+            <Description>List of objects without the specified attribute</Description>
+            <Note/>
+            <Bitmap></Bitmap>
+        </Item>
+    </Node>
+</Element>

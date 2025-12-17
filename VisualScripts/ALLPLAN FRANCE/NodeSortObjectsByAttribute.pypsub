@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Element>
+    <LanguageFile>.\SortObjectsByAttribute</LanguageFile>
+    <Script>
+        <Name>.\NodeSortObjectsByAttribute.py</Name>
+        <Uuid>1D6C3F5A-7B92-4C11-9E0F-8A4B32F19C6D</Uuid>
+        <Title>Sorts a list of model objects based on a specified attribute.</Title>
+        <TextId>1001</TextId>
+        <Version>0.1.0</Version>
+    </Script>
+    <Page>
+        <Name>__IN_MANDATORY__</Name>
+        <Parameter>
+            <Name>Objects</Name>
+            <Text>Objects</Text>
+            <TextId>1002</TextId>
+            <Value></Value>
+            <ValueType>list{$Object}</ValueType>
+        </Parameter>
+    </Page>
+    <Page>
+        <Name>__IN_OPTIONAL__</Name>
+        <Parameter>
+            <Name>AttributeID</Name>
+            <Text>Attribute ID</Text>
+            <TextId>1003</TextId>
+            <Value/>
+            <ValueType>object{Integer}</ValueType>
+        </Parameter>
+    </Page>
+    <Page>
+        <Name>__OUT__</Name>
+        <Parameter>
+            <Name>ObjectsWithAttribute</Name>
+            <Text>Objects with the attribute</Text>
+            <TextId>1004</TextId>
+            <Value></Value>
+            <ValueType>list{}</ValueType>
+        </Parameter>
+        <Parameter>
+            <Name>ObjectsWithoutAttribute</Name>
+            <Text>Objects without the attribute</Text>
+            <TextId>1005</TextId>
+            <Value></Value>
+            <ValueType>list{}</ValueType>
+        </Parameter>
+    </Page>
+    <Page>
+        <Name>__HiddenPage__</Name>
+        <Parameter>
+            <Name>Executed</Name>
+            <Value>False</Value>
+            <ValueType>CheckBox</ValueType>
+        </Parameter>
+    </Page>
+</Element>
