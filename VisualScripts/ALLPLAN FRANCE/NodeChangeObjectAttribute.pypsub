@@ -6,7 +6,7 @@
         <Uuid>3F7B9D20-6A84-4B71-B6AC-3B0A-1C9F812E0001</Uuid>
         <Title>Change the value of an element attribute</Title>
         <TextId>1001</TextId>
-        <Version>0.2.0</Version>
+        <Version>0.2</Version>
     </Script>
     <Page>
         <Name>__IN_MANDATORY__</Name>

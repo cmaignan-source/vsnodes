@@ -6,7 +6,7 @@
         <Uuid>1988ED8A-7CFA-4C7F-8077-57375BF1B900</Uuid>
         <Title>Executes a for-loop operation</Title>
         <TextId>1001</TextId>
-        <Version>0.1.0</Version>
+        <Version>0.1</Version>
     </Script>
     <Page>
         <Name>__IN_MANDATORY__</Name>

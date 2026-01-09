@@ -6,7 +6,7 @@
         <Uuid>DF428796-25D8-41ED-9E36-84CDFB08FEDC</Uuid>
         <Title>Set or create an attribute using PythonPart framework</Title>
         <TextId>1901</TextId>
-        <Version>0.1.0</Version>
+        <Version>0.1</Version>
     </Script>
     <Page>
         <Name>__IN_MANDATORY__</Name>

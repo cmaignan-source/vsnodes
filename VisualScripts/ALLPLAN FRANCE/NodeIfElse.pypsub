@@ -6,7 +6,7 @@
         <Uuid>A2C9E8F1-4B27-4C6C-9C9F-3B5F8C7D1234</Uuid>
         <Title>Conditional If Else statement</Title>
         <TextId>1001</TextId>
-        <Version>0.1.0</Version>
+        <Version>0.1</Version>
     </Script>
     <Page>
         <Name>__IN_MANDATORY__</Name>

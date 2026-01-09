@@ -6,7 +6,7 @@
         <Uuid>3F7B9D20-6A84-4B71-B6AC-3B0A1C9F812E</Uuid>
         <Title>Calculates the remainder of a division operation with two variables: x and y.</Title>
         <TextId>1001</TextId>
-        <Version>0.1.0</Version>
+        <Version>0.1</Version>
     </Script>
     <Page>
         <Name>Modulo</Name>

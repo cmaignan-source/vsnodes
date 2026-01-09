@@ -6,7 +6,7 @@
         <Uuid>9C2F4A77-1B3D-4A6F-9E21-8F5A0C7D4B3E</Uuid>
         <Title>Split one list into two lists using a boolean mask</Title>
         <TextId>1001</TextId>
-        <Version>0.1.0</Version>
+        <Version>0.1</Version>
     </Script>
     <Page>
         <Name>__IN_MANDATORY__</Name>

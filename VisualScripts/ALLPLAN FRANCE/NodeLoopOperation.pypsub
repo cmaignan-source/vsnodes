@@ -6,7 +6,7 @@
         <Uuid>9CCF60C2-5A2D-413E-8397-060C569C5D7B</Uuid>
         <Title>Individual operation for LoopFor node</Title>
         <TextId>1101</TextId>
-        <Version>0.1.0</Version>
+        <Version>0.1</Version>
     </Script>
     <Page>
         <Name>__IN_MANDATORY__</Name>

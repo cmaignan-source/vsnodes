@@ -1,38 +1,31 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Element>
-    <LanguageFile>.\MatchCase</LanguageFile>
+    <LanguageFile>.\AttributesManagement</LanguageFile>
     <Script>
-        <Name>.\NodeMatchCase.py</Name>
-        <Uuid>A2C48E9D-5F73-4E3E-B8B2-7D0B1A6D1F03</Uuid>
-        <Title>Multiple pattern match / switch statement</Title>
+        <Name>.\NodeGetObjectAttribute.py</Name>
+        <Uuid>3F8A9C2E-7B41-4D62-A8F3-91C0B7E5D4A1</Uuid>
+        <Title>Get object attribute value</Title>
         <TextId>1001</TextId>
         <Version>0.1</Version>
     </Script>
     <Page>
         <Name>__IN_MANDATORY__</Name>
         <Parameter>
-            <Name>Value</Name>
-            <Text>Value</Text>
+            <Name>Objects</Name>
+            <Text>Objects</Text>
             <TextId>1002</TextId>
             <Value></Value>
-            <ValueType>list{}</ValueType>
+            <ValueType>list{$Object}</ValueType>
         </Parameter>
     </Page>
     <Page>
-        <Name>CasesPage</Name>
+        <Name>__IN_OPTIONAL__</Name>
         <Parameter>
-            <Name>Cases</Name>
-            <Text>Cases</Text>
+            <Name>AttributeID</Name>
+            <Text>Attribute ID</Text>
             <TextId>1003</TextId>
             <Value/>
-            <ValueType>list{}</ValueType>
-        </Parameter>
-        <Parameter>
-            <Name>Default</Name>
-            <Text>Default</Text>
-            <TextId>1004</TextId>
-            <Value/>
-            <ValueType>list{}</ValueType>
+            <ValueType>object{Integer}</ValueType>
         </Parameter>
     </Page>
     <Page>
@@ -40,7 +33,7 @@
         <Parameter>
             <Name>Result</Name>
             <Text>Result</Text>
-            <TextId>1005</TextId>
+            <TextId>1004</TextId>
             <Value></Value>
             <ValueType>list{}</ValueType>
         </Parameter>

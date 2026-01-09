@@ -6,7 +6,7 @@
         <Uuid>1D6C3F5A-7B92-4C11-9E0F-8A4B32F19C6D</Uuid>
         <Title>Sorts a list of model objects based on a specified attribute.</Title>
         <TextId>1001</TextId>
-        <Version>0.1.0</Version>
+        <Version>0.1</Version>
     </Script>
     <Page>
         <Name>__IN_MANDATORY__</Name>
