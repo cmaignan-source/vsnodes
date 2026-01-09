@@ -28,6 +28,7 @@ The plugin installs following assets into ALLPLAN:
 - VisualScripting nodes:
   - ChangeObjectAttribute
   - CommandBlock
+  - GetObjectAttribute
   - IfElse
   - ListSplitByBool
   - LoopFor
