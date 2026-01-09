@@ -104,7 +104,7 @@ A noter : 'NewValue' peut aussi être une liste ; dans ce cas, chaque élément 
     </Node>
     <Node Name="NodeGetObjectAttribute">
         <Item>
-            <TextId>1001</TextId>
+            <TextId>1801</TextId>
             <Text>Récupère la valeur d’un attribut d’objets</Text>
             <Description>Ce nœud renvoie la valeur d’un attribut spécifique pour un ou plusieurs objets.&#xA;
 - &#xA;
@@ -121,21 +121,21 @@ Valeurs de l'attribut **Désignation** sous forme de liste&#xA;
             <Bitmap></Bitmap>
         </Item>
         <Item>
-            <TextId>1002</TextId>
+            <TextId>1802</TextId>
             <Text>Objects</Text>
             <Description/>
             <Note/>
             <Bitmap></Bitmap>
         </Item>
         <Item>
-            <TextId>1003</TextId>
+            <TextId>1803</TextId>
             <Text>Attribute ID</Text>
             <Description/>
             <Note/>
             <Bitmap></Bitmap>
         </Item>
         <Item>
-            <TextId>1004</TextId>
+            <TextId>1804</TextId>
             <Text>Result</Text>
             <Description/>
             <Note/>

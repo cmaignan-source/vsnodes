@@ -5,15 +5,15 @@
         <Name>.\NodeGetObjectAttribute.py</Name>
         <Uuid>3F8A9C2E-7B41-4D62-A8F3-91C0B7E5D4A1</Uuid>
         <Title>Get object attribute value</Title>
-        <TextId>1001</TextId>
-        <Version>0.1</Version>
+        <TextId>1801</TextId>
+        <Version>0.2</Version>
     </Script>
     <Page>
         <Name>__IN_MANDATORY__</Name>
         <Parameter>
             <Name>Objects</Name>
             <Text>Objects</Text>
-            <TextId>1002</TextId>
+            <TextId>1802</TextId>
             <Value></Value>
             <ValueType>list{$Object}</ValueType>
         </Parameter>
@@ -23,7 +23,7 @@
         <Parameter>
             <Name>AttributeID</Name>
             <Text>Attribute ID</Text>
-            <TextId>1003</TextId>
+            <TextId>1803</TextId>
             <Value/>
             <ValueType>object{Integer}</ValueType>
         </Parameter>
@@ -33,7 +33,7 @@
         <Parameter>
             <Name>Result</Name>
             <Text>Result</Text>
-            <TextId>1004</TextId>
+            <TextId>1804</TextId>
             <Value></Value>
             <ValueType>list{}</ValueType>
         </Parameter>
