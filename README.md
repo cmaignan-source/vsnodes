@@ -34,6 +34,7 @@ The plugin installs following assets into ALLPLAN:
   - LoopFor
   - MatchCase
   - OperatorModulo
+  - PointIndexPreview
   - SetOrCreateAttribute
   - SortObjectsByAttribute
 
