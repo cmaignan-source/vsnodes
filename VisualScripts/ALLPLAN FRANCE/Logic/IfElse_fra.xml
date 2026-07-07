@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Element>
+    <StringTable text="Allplan IfElse NodeScript stringtable"></StringTable>
+    <Node Name="NodeIfElse">
+        <Item>
+            <TextId>1001</TextId>
+            <Text>Instruction conditionnelle If Else</Text>
+            <Description>Cette opération effectue une sélection entre deux valeurs ou objets en fonction d'une condition.&#xA;
+**Exemples :**&#xA;
+- si la condition est **Vraie**, renvoie un cube ;&#xA;si elle est **Fausse**, retourne un cylindre&#xA;
+- lorsqu'on utilise une liste de valeurs de test et deux listes de résultats, chaque condition est évaluée élément par élément.&#xA;
+(si les listes n'ont pas la même longueur, elles sont automatiquement complétées en recopiant leur dernier élément pour atteindre la taille de la plus grande)&#xA;
+`Condition = [False, False, False, False, False, True, False, ...]`&#xA;
+`OnTrue = ['A', 'B', ..., 'Z']`&#xA;
+`OnFalse = [0, 1, ..., 10]`&#xA;
+➔ `[0, 1, 2, 3, 4, 'F', 6, 7, 8, 9, 10, 10, 10, ...]`&#xA;
+
+## Liens
+
+[Aide](https://github.com/cmaignan-source/vsnodes/blob/main/VisualScripts/ALLPLAN%20FRANCE/README-IfElse.md)</Description>
+            <Note/>
+            <Bitmap></Bitmap>
+        </Item>
+        <Item>
+            <TextId>1002</TextId>
+            <Text>Condition</Text>
+            <Description>Énoncé de la condition</Description>
+            <Note/>
+            <Bitmap></Bitmap>
+        </Item>
+        <Item>
+            <TextId>1003</TextId>
+            <Text>Vrai</Text>
+            <Description>Résultat si la condition est vraie</Description>
+            <Note/>
+            <Bitmap></Bitmap>
+        </Item>
+        <Item>
+            <TextId>1004</TextId>
+            <Text>Faux</Text>
+            <Description>Résultat si la condition est fausse</Description>
+            <Note/>
+            <Bitmap></Bitmap>
+        </Item>
+        <Item>
+            <TextId>1005</TextId>
+            <Text>Résultat</Text>
+            <Description/>
+            <Note/>
+            <Bitmap></Bitmap>
+        </Item>
+    </Node>
+</Element>

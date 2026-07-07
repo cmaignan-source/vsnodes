@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?><Element>
+    <StringTable>Allplan ListSplitByBool NodeScript stringtable</StringTable>
+    <Node Name="NodeListSplitByBool">
+      <Item>
+          <TextId>1001</TextId>
+          <Text>Split one list into two lists according to a boolean mask</Text>
+          <Description>Split one list into two lists according to a boolean mask&#xA;
+- **True** elements on one list&#xA;
+- **False** elements on the other one&#xA;(default if boolean mask is not set)&#xA;
+
+## Links
+
+[Help](https://github.com/cmaignan-source/vsnodes/blob/main/VisualScripts/ALLPLAN%20FRANCE/README-ListSplitByBool.md)</Description>
+            <Note/>
+            <Bitmap></Bitmap>
+        </Item>
+        <Item>
+            <TextId>1002</TextId>
+            <Text>List to split</Text>
+            <Description/>
+            <Note/>
+            <Bitmap></Bitmap>
+        </Item>
+        <Item>
+            <TextId>1003</TextId>
+            <Text>Boolean mask</Text>
+            <Description/>
+            <Note/>
+            <Bitmap></Bitmap>
+        </Item>
+        <Item>
+            <TextId>1004</TextId>
+            <Text>True</Text>
+            <Description>New list if test value is **true**</Description>
+            <Note/>
+            <Bitmap></Bitmap>
+        </Item>
+        <Item>
+            <TextId>1005</TextId>
+            <Text>False</Text>
+            <Description>New list if test value is **false**</Description>
+            <Note/>
+            <Bitmap></Bitmap>
+        </Item>
+    </Node>
+</Element>

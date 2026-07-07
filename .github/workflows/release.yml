@@ -1,4 +1,4 @@
-name: Create release draft
+name: Release Allep
 
 on:
   push:
@@ -12,18 +12,19 @@ jobs:
       contents: write
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Create allep file
-        uses: vimtor/action-zip@v1.1
+        uses: vimtor/action-zip@v1.2
         with:
           files: VisualScripts/ install-config.yml
           recursive: false
           dest: vsnodes_allplanfrance.allep
 
-      - name: Create release
+      - name: Create release draft
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        shell: pwsh
         run: |
           $tag = "${{ github.ref_name }}"
 

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Element>
+    <StringTable text="Allplan MatchCase NodeScript stringtable"></StringTable>
+    <Node Name="NodeMatchCase">
+        <Item>
+            <TextId>1001</TextId>
+            <Text>Multiple pattern match / switch Statement</Text>
+            <Description>This operation performs a selection among multiple actions or results by comparing a test value with a set of predefined cases&#xA;
+**Typical Use:**&#xA;
+- if the test value matches any case value, **MatchCase** returns the corresponding result or executes the linked action&#xA;
+- multiple **Case** nodes can be connected to the `Cases` input to form a switch-like selection chain&#xA;
+- a `Default` action can be specified and will be returned if none of the cases match&#xA;
+
+- **Example:**&#xA;
+Color update from a **Box** dimensions&#xA;
+
+- `Value`=Length
+- `Cases`:
+**Case**(`MatchValue`=500, `Function`=**ColorInput 4**)
+**Case**(`MatchValue`=1000, `Function`=**ColorInput 5**)
+**Case**(`MatchValue`=[750, ..., 800], `Function`=**ColorInput 7**)
+- `Default`=**ColorInput 8**
+
+-  `Result`:
+if the Length is set to 500, the cube will be in green;
+if it's 1000, the cube will be in pink;
+in any value between 750 and 800 (inclusive) it will be blue;
+for all the others cases, the cube will be orange.
+
+## Links
+
+[Help](https://github.com/cmaignan-source/vsnodes/blob/main/VisualScripts/ALLPLAN%20FRANCE/README-MatchCase.md)</Description>
+            <Note/>
+            <Bitmap></Bitmap>
+        </Item>
+        <Item>
+            <TextId>1002</TextId>
+            <Text>Value</Text>
+            <Description>Reference value</Description>
+            <Note/>
+            <Bitmap></Bitmap>
+        </Item>
+        <Item>
+            <TextId>1003</TextId>
+            <Text>Cases</Text>
+            <Description>List of **Case** nodes</Description>
+            <Note/>
+            <Bitmap></Bitmap>
+        </Item>
+        <Item>
+            <TextId>1004</TextId>
+            <Text>Default</Text>
+            <Description>Default value if none case matches the input `Value`</Description>
+            <Note/>
+            <Bitmap></Bitmap>
+        </Item>
+        <Item>
+            <TextId>1005</TextId>
+            <Text>Result</Text>
+            <Description/>
+            <Note/>
+            <Bitmap></Bitmap>
+        </Item>
+    </Node>
+    <Node Name="NodeCase">
+        <Item>
+            <TextId>1101</TextId>
+            <Text>Individual case for MatchCase node</Text>
+            <Description>This operation defines a single comparison rule for use with a **MatchCase** node.&#xA;
+The **Case** node associates a specific condition (single value or a list of values) with a result or action to be returned when matched.&#xA;
+
+**Typical Use:**&#xA;
+- set the value to match with `MatchValue` and specify the corresponding action or result in `Function`&#xA;
+- multiple **Case** nodes can be connected to the `Cases` input of **MatchCase** to form a switch-like selection chain&#xA;
+- for matching several values (such as [0,5,10]), set `MatchValue` as a list&#xA;
+
+## Links
+
+[Help](https://github.com/cmaignan-source/vsnodes/blob/main/VisualScripts/ALLPLAN%20FRANCE/README-MatchCase.md)</Description>
+            <Note/>
+            <Bitmap></Bitmap>
+        </Item>
+        <Item>
+            <TextId>1102</TextId>
+            <Text>MatchValue</Text>
+            <Description>Value to compare</Description>
+            <Note/>
+            <Bitmap></Bitmap>
+        </Item>
+        <Item>
+            <TextId>1103</TextId>
+            <Text>Function</Text>
+            <Description>Function to execute</Description>
+            <Note/>
+            <Bitmap></Bitmap>
+        </Item>
+        <Item>
+            <TextId>1104</TextId>
+            <Text>Result</Text>
+            <Description/>
+            <Note/>
+            <Bitmap></Bitmap>
+        </Item>
+    </Node>
+</Element>

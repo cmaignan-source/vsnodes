@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Element>
+    <StringTable text="Allplan LoopFor NodeScript stringtable"></StringTable>
+    <Node Name="NodeLoopFor">
+        <Item>
+            <TextId>1001</TextId>
+            <Text>Executes a for-loop operation</Text>
+            <Description>This node executes a for-loop that iterates over a defined range of values, running connected operations at each step until the limit value is reached.&#xA;
+The `Result` output of the **LoopFor** node:&#xA;
+if a single operation is connected, it returns a list.&#xA;
+- if multiple operations are connected, it returns a list of lists, one for each operation (access to these lists can be managed using the base **ListItem** node).&#xA;
+
+- **Examples:**&#xA;
+
+- `Repeat`=10&#xA;
+`Function`:&#xA;
+**LoopOperation**&#xA;(`InitValue`=0, `Operand`=1, `Operation`='+')&#xA;
+`Result`:&#xA;
+- ➔ `[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]`&#xA;
+
+- `Repeat`=3&#xA;
+`Function`:&#xA;
+**LoopOperation**&#xA;(`InitValue`=0, `Operand`=1, `Operation`='+')&#xA;
+**LoopOperation**&#xA;(`InitValue`=2, `Operand`=2, `Operation`='*')&#xA;
+`Result`:&#xA;
+- ➔ `[[1, 2, 3], [4, 8, 16]]`&#xA;
+
+- `Repeat`=5&#xA;
+`Function`:&#xA;
+**LoopOperation**&#xA;(`InitValue`=**Box**, `Operand`='', `Operation`='')&#xA;
+`Result`:&#xA;
+- ➔ `[Polyhedron3D, Polyhedron3D, Polyhedron3D, Polyhedron3D, Polyhedron3D]`&#xA;
+
+
+## Links
+
+[Help](https://github.com/cmaignan-source/vsnodes/blob/main/VisualScripts/ALLPLAN%20FRANCE/README-LoopFor.md)</Description>
+            <Note/>
+            <Bitmap></Bitmap>
+        </Item>
+        <Item>
+            <TextId>1002</TextId>
+            <Text>Repeat</Text>
+            <Description>Range of the loop</Description>
+            <Note/>
+            <Bitmap></Bitmap>
+        </Item>
+        <Item>
+            <TextId>1003</TextId>
+            <Text>Function</Text>
+            <Description>List of **LoopOperation** nodes</Description>
+            <Note/>
+            <Bitmap></Bitmap>
+        </Item>
+        <Item>
+            <TextId>1004</TextId>
+            <Text>Result</Text>
+            <Description/>
+            <Note/>
+            <Bitmap></Bitmap>
+        </Item>
+    </Node>
+    <Node Name="NodeLoopOperation">
+        <Item>
+            <TextId>1101</TextId>
+            <Text>Individual operation for LoopFor node</Text>
+            <Description>Defines an operation to be used within a **LoopFor** node.&#xA;
+The **LoopOperation** node defines a mathematical operation on a numeric value when used inside a loop.&#xA;
+If the initial value is an object, the operand and operation inputs remain unused.&#xA;
+
+**Typical Use:**&#xA;
+- set the `InitValue` and the `Operand` with numeric values, and define the `Operation` with a mathematical operation such as '+'&#xA;
+- set the `InitValue` to a geometrical object when no mathematical operation is required (the `Operand` and `Operation` inputs are then ignored)&#xA;
+
+## Links
+
+[Help](https://github.com/cmaignan-source/vsnodes/blob/main/VisualScripts/ALLPLAN%20FRANCE/README-LoopFor.md)</Description>
+            <Note/>
+            <Bitmap></Bitmap>
+        </Item>
+        <Item>
+            <TextId>1102</TextId>
+            <Text>InitValue</Text>
+            <Description>Defines the initial value or object used at the start of the loop</Description>
+            <Note/>
+            <Bitmap></Bitmap>
+        </Item>
+        <Item>
+            <TextId>1103</TextId>
+            <Text>Operand</Text>
+            <Description>Specifies the numeric value used in the mathematical operation applied during each iteration</Description>
+            <Note/>
+            <Bitmap></Bitmap>
+        </Item>
+        <Item>
+        <TextId>1104</TextId>
+            <Text>Operation</Text>
+            <Description>Defines the mathematical operator (for example '+', '-', '*', '/') applied to the `InitValue` and `Operand`</Description>
+            <Note/>
+            <Bitmap></Bitmap>
+        </Item>
+        <Item>
+            <TextId>1105</TextId>
+            <Text>Result</Text>
+            <Description/>
+            <Note/>
+            <Bitmap></Bitmap>
+        </Item>
+    </Node>
+</Element>

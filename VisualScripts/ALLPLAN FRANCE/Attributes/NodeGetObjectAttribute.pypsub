@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Element>
+    <LanguageFile>.\AttributesManagement</LanguageFile>
+    <Script>
+        <Name>.\NodeGetObjectAttribute.py</Name>
+        <Uuid>3F8A9C2E-7B41-4D62-A8F3-91C0B7E5D4A1</Uuid>
+        <Title>Get object attribute value</Title>
+        <TextId>1801</TextId>
+        <Version>0.2</Version>
+    </Script>
+    <Page>
+        <Name>__IN_MANDATORY__</Name>
+        <Parameter>
+            <Name>Objects</Name>
+            <Text>Objects</Text>
+            <TextId>1802</TextId>
+            <Value></Value>
+            <ValueType>list{$Object}</ValueType>
+        </Parameter>
+    </Page>
+    <Page>
+        <Name>__IN_OPTIONAL__</Name>
+        <Parameter>
+            <Name>AttributeID</Name>
+            <Text>Attribute ID</Text>
+            <TextId>1803</TextId>
+            <Value/>
+            <ValueType>object{Integer}</ValueType>
+        </Parameter>
+    </Page>
+    <Page>
+        <Name>__OUT__</Name>
+        <Parameter>
+            <Name>Result</Name>
+            <Text>Result</Text>
+            <TextId>1804</TextId>
+            <Value></Value>
+            <ValueType>list{}</ValueType>
+        </Parameter>
+    </Page>
+    <Page>
+        <Name>__HiddenPage__</Name>
+        <Parameter>
+            <Name>Executed</Name>
+            <Value>False</Value>
+            <ValueType>CheckBox</ValueType>
+        </Parameter>
+    </Page>
+</Element>

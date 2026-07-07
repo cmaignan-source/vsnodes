@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Element>
+    <StringTable text="Allplan MatchCase NodeScript stringtable"></StringTable>
+    <Node Name="NodeMatchCase">
+        <Item>
+            <TextId>1001</TextId>
+            <Text>Évaluation multiple / instruction switch</Text>
+            <Description>Cette opération effectue une sélection parmi plusieurs actions ou résultats en comparant une valeur test avec un ensemble de cas prédéfinis&#xA;
+**Utilisation typique :**&#xA;
+- si la valeur testée correspond à un cas, le nœud **MatchCase** retourne le résultat associé ou exécute l'action liée&#xA;
+- plusieurs nœuds **Case** peuvent être connectés à l'entrée `Cases` pour former une chaîne de sélection (type switch)&#xA;
+- `Default` peut être définie et sera renvoyée si aucun cas ne correspond&#xA;
+
+- **Exemple :**&#xA;
+Mise à jour de la couleur suivant les dimensions d'une **Box**&#xA;
+
+- `Value`=Length
+- `Cases`:
+**Case**(`MatchValue`=500, `Function`=**ColorInput 4**)
+**Case**(`MatchValue`=1000, `Function`=**ColorInput 5**)
+**Case**(`MatchValue`=[750, ..., 800], `Function`=**ColorInput 7**)
+- `Default`=**ColorInput 8**
+
+-  `Result`:
+si Length est égale à 500, le cube sera représenté en vert;
+si c'est 1000, le cube sera en rose;
+pour n'importe quelle valeur entre 750 et 800 (inclus) il sera en bleu;
+dans tous les autres cas, il sera orange.
+
+## Liens
+
+[Aide](https://github.com/cmaignan-source/vsnodes/blob/main/VisualScripts/ALLPLAN%20FRANCE/README-MatchCase.md)</Description>
+            <Note/>
+            <Bitmap></Bitmap>
+        </Item>
+        <Item>
+            <TextId>1002</TextId>
+            <Text>Valeur</Text>
+            <Description>Valeur de référence à tester</Description>
+            <Note/>
+            <Bitmap></Bitmap>
+        </Item>
+        <Item>
+            <TextId>1003</TextId>
+            <Text>Cas</Text>
+            <Description>Liste de nœuds **Case** à comparer</Description>
+            <Note/>
+            <Bitmap></Bitmap>
+        </Item>
+        <Item>
+            <TextId>1004</TextId>
+            <Text>Défaut</Text>
+            <Description>Valeur retournée si aucun cas ne correspond à la `Value` saisie</Description>
+            <Note/>
+            <Bitmap></Bitmap>
+        </Item>
+        <Item>
+            <TextId>1005</TextId>
+            <Text>Résultat</Text>
+            <Description/>
+            <Note/>
+            <Bitmap></Bitmap>
+        </Item>
+    </Node>
+    <Node Name="NodeCase">
+        <Item>
+            <TextId>1101</TextId>
+            <Text>Cas individuel pour le nœud MatchCase</Text>
+            <Description>Cette opération définit une règle de comparaison unique à utiliser avec un nœud **MatchCase**.&#xA;
+Le nœud **Case** associe une condition spécifique (valeur unique ou liste de valeurs) à un résultat ou une action à retourner en cas de correspondance.&#xA;
+
+**Utilisation typique :**&#xA;
+- définissez la valeur à tester dans `MatchValue` et spécifiez l’action ou le résultat associé dans `Function`&#xA;
+- plusieurs nœuds **Case** peuvent être reliés à l’entrée `Cases` de **MatchCase** pour construire une chaîne de sélection&#xA;
+- pour tester plusieurs valeurs (par exemple [0,5,10]), saisissez `MatchValue` sous forme de liste&#xA;
+
+## Liens
+
+[Aide](https://github.com/cmaignan-source/vsnodes/blob/main/VisualScripts/ALLPLAN%20FRANCE/README-MatchCase.md)</Description>
+            <Note/>
+            <Bitmap></Bitmap>
+        </Item>
+        <Item>
+            <TextId>1102</TextId>
+            <Text>Valeur de correspondance</Text>
+            <Description>Valeur ou liste de valeurs à comparer</Description>
+            <Note/>
+            <Bitmap></Bitmap>
+        </Item>
+        <Item>
+            <TextId>1103</TextId>
+            <Text>Fonction</Text>
+            <Description>Action ou résultat à retourner si la valeur correspond</Description>
+            <Note/>
+            <Bitmap></Bitmap>
+        </Item>
+        <Item>
+            <TextId>1104</TextId>
+            <Text>Résultat</Text>
+            <Description/>
+            <Note/>
+            <Bitmap></Bitmap>
+        </Item>
+    </Node>
+</Element>

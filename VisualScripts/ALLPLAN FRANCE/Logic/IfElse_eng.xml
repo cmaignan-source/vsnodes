@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Element>
+    <StringTable text="Allplan IfElse NodeScript stringtable"></StringTable>
+    <Node Name="NodeIfElse">
+        <Item>
+            <TextId>1001</TextId>
+            <Text>Conditional If Else statement</Text>
+            <Description>This operation performs a selection between two values or objects depending on a condition&#xA;
+**Examples:**&#xA;
+- if the condition is **True**, return a cube;&#xA;if **False**, return a cylinder&#xA;
+- with a list of test values and two lists for results, each condition is evaluated elementwise:&#xA;
+(if the lists are of different lengths, their size is automatically adjusted by repeating the last element of each list until the largest length is reached)&#xA;
+`Condition = [False, False, False, False, False, True, False, ...]`&#xA;
+`OnTrue = ['A', 'B', ..., 'Z']`&#xA;
+`OnFalse = [0, 1, ..., 10]`&#xA;
+➔ `[0, 1, 2, 3, 4, 'F', 6, 7, 8, 9, 10, 10, 10, ...]`&#xA;
+
+## Links
+
+[Help](https://github.com/cmaignan-source/vsnodes/blob/main/VisualScripts/ALLPLAN%20FRANCE/README-IfElse.md)</Description>
+            <Note/>
+            <Bitmap></Bitmap>
+        </Item>
+        <Item>
+            <TextId>1002</TextId>
+            <Text>Condition</Text>
+            <Description>Condition statement</Description>
+            <Note/>
+            <Bitmap></Bitmap>
+        </Item>
+        <Item>
+            <TextId>1003</TextId>
+            <Text>OnTrue</Text>
+            <Description>Result if condition is true</Description>
+            <Note/>
+            <Bitmap></Bitmap>
+        </Item>
+        <Item>
+            <TextId>1004</TextId>
+            <Text>OnFalse</Text>
+            <Description>Result if condition is false</Description>
+            <Note/>
+            <Bitmap></Bitmap>
+        </Item>
+        <Item>
+            <TextId>1005</TextId>
+            <Text>Result</Text>
+            <Description/>
+            <Note/>
+            <Bitmap></Bitmap>
+        </Item>
+    </Node>
+</Element>
