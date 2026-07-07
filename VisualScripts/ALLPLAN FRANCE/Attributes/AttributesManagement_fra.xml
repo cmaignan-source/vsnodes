@@ -69,7 +69,7 @@ A noter : 'NewValue' peut aussi être une liste ; dans ce cas, chaque élément 
 
 ## Liens
 
-[Aide](https://github.com/cmaignan-source/vsnodes/blob/main/VisualScripts/ALLPLAN%20FRANCE/README-ChangeObjectAttribute.md)</Description>
+[Aide](https://github.com/cmaignan-source/vsnodes/blob/main/VisualScripts/ALLPLAN%20FRANCE/Attributes/README-ChangeObjectAttribute.md)</Description>
             <Note/>
             <Bitmap></Bitmap>
         </Item>
@@ -116,7 +116,7 @@ Valeurs de l'attribut **Désignation** sous forme de liste&#xA;
 
 ## Liens
 
-[Aide](https://github.com/cmaignan-source/vsnodes/blob/main/VisualScripts/ALLPLAN%20FRANCE/README-GetObjectAttribute.md)</Description>
+[Aide](https://github.com/cmaignan-source/vsnodes/blob/main/VisualScripts/ALLPLAN%20FRANCE/Attributes/README-GetObjectAttribute.md)</Description>
             <Note/>
             <Bitmap></Bitmap>
         </Item>
