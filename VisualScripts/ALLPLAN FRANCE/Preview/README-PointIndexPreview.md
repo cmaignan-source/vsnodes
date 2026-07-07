@@ -1,4 +1,4 @@
-# POINTINDEXPREVIEW - VS NODE FOR ALLPLAN
+# POINT INDEX PREVIEW - VS NODE FOR ALLPLAN
 
 ## Overview
 This node allows you to preview the index of the points of supported 3D geometry objects directly in Allplan. It is useful for inspecting vertex order and debugging geometry used in Visual Scripting or PythonPart workflows.

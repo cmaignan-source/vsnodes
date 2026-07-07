@@ -1,4 +1,4 @@
-# SETORCREATEATTRIBUTE - VS NODE FOR ALLPLAN
+# SET OR CREATE ATTRIBUTE - VS NODE FOR ALLPLAN
 
 ## Overview
 This node enables you to **set** or **create** an attribute on a new PythonPart object in your ALLPLAN project.

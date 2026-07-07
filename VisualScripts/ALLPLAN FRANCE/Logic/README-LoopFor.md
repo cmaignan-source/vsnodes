@@ -1,4 +1,4 @@
-# LOOPFOR & LOOPOPERATION - VS NODES FOR ALLPLAN
+# LOOP FOR & LOOP OPERATION - VS NODES FOR ALLPLAN
 
 ## Overview
 These nodes provide iterative and mathematical operations for parameterized scripting in ALLPLAN VisualScripting.

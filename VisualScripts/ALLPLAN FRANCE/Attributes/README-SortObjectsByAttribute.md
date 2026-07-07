@@ -1,4 +1,4 @@
-# SORTOBJECTSBYATTRIBUTE - VS NODE FOR ALLPLAN
+# SORT OBJECTS BY ATTRIBUTE - VS NODE FOR ALLPLAN
 
 ## Overview
 This node for Allplan VisualScripting sorts a list of model objects based on the value of a given Allplan **attribute**.

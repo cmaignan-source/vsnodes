@@ -1,4 +1,4 @@
-# IFELSE - VS NODE FOR ALLPLAN
+# IF ELSE - VS NODE FOR ALLPLAN
 
 ## Overview
 This node for Allplan VisualScripting allows you to select between two values or objects depending on a condition.

@@ -1,4 +1,4 @@
-# CHANGEOBJECTATTRIBUTE - VS NODE FOR ALLPLAN
+# CHANGE OBJECT ATTRIBUTE - VS NODE FOR ALLPLAN
 
 ## Overview
 This node enables you to **set** or **add** an attribute on a existing object in your ALLPLAN project.

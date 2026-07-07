@@ -1,4 +1,4 @@
-# GETOBJECTATTRIBUTE - VS NODE FOR ALLPLAN
+# GET OBJECT ATTRIBUTE - VS NODE FOR ALLPLAN
 
 ## Overview
 This node enables you to **get** the value of a specific attribute for one or more objects in your ALLPLAN project.

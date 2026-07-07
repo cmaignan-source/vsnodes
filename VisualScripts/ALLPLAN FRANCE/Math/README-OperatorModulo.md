@@ -1,4 +1,4 @@
-# OPERATORMODULO - VS NODE FOR ALLPLAN
+# OPERATOR MODULO - VS NODE FOR ALLPLAN
 
 ## Overview
 This node for Allplan VisualScripting performs the **modulo operation** between two numeric inputs.

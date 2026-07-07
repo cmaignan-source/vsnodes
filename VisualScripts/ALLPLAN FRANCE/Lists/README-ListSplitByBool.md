@@ -1,4 +1,4 @@
-# LISTSPLIBYBOOL - VS NODE FOR ALLPLAN
+# LIST SPLIT BY BOOL - VS NODE FOR ALLPLAN
 
 ## Overview
 This node for Allplan VisualScripting splits a source list into two sublists, based on a matching boolmask.

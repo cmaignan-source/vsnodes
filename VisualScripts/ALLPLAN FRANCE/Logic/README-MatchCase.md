@@ -1,4 +1,4 @@
-# MATCHCASE & CASE - VS NODES FOR ALLPLAN
+# MATCH CASE & CASE - VS NODES FOR ALLPLAN
 
 ## Overview
 These nodes provide flexible multi-condition selection ("switch" or "pattern matching") for ALLPLAN VisualScripting.

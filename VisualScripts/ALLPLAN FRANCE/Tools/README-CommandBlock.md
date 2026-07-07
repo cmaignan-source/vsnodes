@@ -1,4 +1,4 @@
-# COMMANDBLOCK - VS NODE FOR ALLPLAN
+# COMMAND BLOCK - VS NODE FOR ALLPLAN
 
 ## Overview
 This node for Allplan VisualScripting processes **one-line string instructions** and produces **four outputs**:
